@@ -1,0 +1,302 @@
+:root{
+    
+    --branco-principal: #ffffff;
+    --cinza-segundario: #ffffff;
+    --botao-vermelho:  #c90505;
+    --cor-de-fundo: #000000;
+    --fonte-principal: 'Andika';
+    
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--cor-de-fundo);
+   
+    
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+
+    background-image: url("../imagens/zico1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+   
+    margin: 0 6em;
+    
+}
+
+.container__caixa img {
+    width: 340px;
+}
+
+.container__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__imagem {
+       margin: 2em 0 3em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-vermelho);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    font-size: 27px;
+}
+
+.botao__segundario {
+    background-color: #f4b61c;
+}
+
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+
+    align-items: center;
+    margin: 0 10em;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 0.1em;
+}
+
+.container {
+    text-align: justify;
+    font-size: 30px;
+}
+
+.secundario__botao{ 
+    display: inline-block;
+    margin: 1em 0;
+
+}
+
+
+.container__descricao {
+    padding: 0.5em;
+    color:#ff5151;
+}
+
+.imagem2 {
+    margin: 0 10em;
+}
+
+
+
+.dispositivos {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    
+    font-size: 50px;
+}
+
+
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--botao-vermelho);
+}
+
+
+.rodape {
+    text-align:center;
+    
+}
+
+.rodade__logo {
+    width: 20%;
+    margin: 4em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content:center ;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 7em;
+   color: #f4b61c;
+
+}
+
+.lista__link a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f4b61c;
+}
+
+.rodape__texto {
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+    margin: 3em 5em;
+    color: #ff5151;
+
+}
+.search-box{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#ff0000;
+    height: 42px;
+    padding: 10px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: open sans;
+    
+}
+
+::-webkit-input-placeholder{
+    color: #494949;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+    background: #ff0000;
+}
+
+*{
+    padding: 0;
+}
+
+#titulo{
+    font-family: sans-serif;
+    color: #ff0000;
+    margin-left: 7%;
+
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: #000000;
+    margin-left: 7%;
+
+}
+
+fieldset{
+    border: 0;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0,2em;
+    color: #ff0000;
+    display: block;
+}
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"].campo select{
+    padding: 0.2em;
+    border: 1px solid #ff0000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;    
+}
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #ff0000;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #ff0000;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    position:top;
+    top: 70%;
+    left: 45%;
+    margin-right: -50%;
+    transform: translate(-50%, 70%);
+}
+
+.botao:hover {
+    background: #ff0000;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao,select{
+    cursor: pointer;
+}
+
+#check{
+    display: inline-block;
+}
+
+
+
